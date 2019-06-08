@@ -8,6 +8,9 @@ img {
     display: inline-block;
 }
 
+a {
+    transition: .2s ease-out;
+}
 /*...................................... 
 
 GRID
@@ -142,6 +145,43 @@ PORTFOLIO
 
 /*...................................... 
 
+PORTFOLIO  SINGLE  PAGE
+
+......................................*/
+
+.portfolio-single-page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio-single-page img {
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
+.button-back {
+    display: inline-block;
+    border: 2px solid #0052C2;
+    width: fit-content;
+    border-radius: 50px;
+    padding: 10px 23px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #0052C2;
+    text-decoration: none;
+    transition: .2s ease-out;
+}
+
+.button-back:hover {
+    color: #fff;
+    background-color: #0052C2;
+}
+/*...................................... 
+
 FOOTER
 
 ...................................... */
@@ -184,7 +224,7 @@ p.footer-item__name {
     color: #ffe400;
 }
 
-.button a{
+.button a {
     display: inline-block;
     border: 2px solid #fff;
     width: fit-content;
@@ -194,13 +234,13 @@ p.footer-item__name {
     font-weight: 700;
     letter-spacing: 2px;
     margin-bottom: 15px;
-    
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
+    transition: .2s ease-out;
 }
 
 .button a:hover {
     color: #061634;
-    background-color: #fff;
+    background-color: #ffe400;
     border-color: #6479a2;
 }
