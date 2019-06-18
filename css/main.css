@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    min-width: 280px;
 }
 
 img {
@@ -11,6 +16,8 @@ img {
 a {
     transition: .2s ease-out;
 }
+
+
 /*...................................... 
 
 GRID
@@ -54,6 +61,7 @@ HEADER
     background-size: cover;
     
     height: 100vh;
+    min-height: 400px;
     
     color: #FFF;
     text-align: center;
@@ -114,6 +122,11 @@ PORTFOLIO
 
 .portfolio-item__img {
     margin-bottom: 17px;
+}
+
+.portfolio-item__img img {
+    max-width: 100%;
+    height: auto;
 }
 
 .portfolio-item__title{
@@ -243,4 +256,55 @@ p.footer-item__name {
     color: #061634;
     background-color: #ffe400;
     border-color: #6479a2;
+}
+
+
+/*...................................... 
+
+M E D I A
+
+......................................*/
+
+/* При ширине экрана в 1160px и менее */
+@media (max-width: 1160px) {
+    
+    .container {
+        width: 100%;
+    }
+
+    .col-4 {
+        width: 100%; /* */
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header__title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+    }
+
+    .header__slogan {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    .portfolio {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
 }
